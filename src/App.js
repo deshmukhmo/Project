@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaYoutube } from "react-icons/fa";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="flex justify-between px-14 items-center bg-[#121212] opacity-95 sticky h-14">
+        <div className="flex gap-8 item-center text-2xl text-white">
+          <div className="flex items-center">
+            <GiHamburgerMenu></GiHamburgerMenu>
+          </div>
+          <div className="flex gap-2 items-center  justify-center">
+            <FaYoutube className="text-2xl text-red-500"/>
+          <span className="text-xl font-medium">Youtube</span>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
